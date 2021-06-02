@@ -1,0 +1,14 @@
+{
+  "menu.file": "文件",
+  "menu.file.open": "打开",
+  "menu.file.setting": "设置",
+  "menu.file.save": "保存",
+  "menu.about": "关于",
+  "panel.filePanel.fileTablePanel.name": "名字",
+  "panel.filePanel.fileTablePanel.size": "大小",
+  "panel.filePanel.fileTreePanel.newFolder": "新建文件夹",
+  "panel.filePanel.fileTreePanel.folderName": "文件夹名",
+  "panel.filePanel.fileTablePanel.unzip": "解压",
+  "panel.message.saveSuccess": "保存成功!",
+  "panel.message.unzipSuccess": "解压成功!"
+}
