@@ -44,7 +44,7 @@ public enum ZnZip {
     }
 
     public void init() throws UnsupportedLookAndFeelException {
-        switch (config.theme.getCurrent()) {
+        switch (config.theme.getValue()) {
             case "Light":
                 UIManager.setLookAndFeel(new FlatLightLaf());
                 break;

@@ -7,24 +7,12 @@ import java.util.List;
 /**
  * @author Enaium
  */
-public class ModeSetting extends Setting {
-
-    @Expose
-    private String current;
+public class ModeSetting extends Setting<String> {
 
     private List<String> mode;
 
-    public ModeSetting(String current) {
-
-        this.current = current;
-    }
-
-    public String getCurrent() {
-        return current;
-    }
-
-    public void setCurrent(String current) {
-        this.current = current;
+    public ModeSetting(String value) {
+        super(value);
     }
 
     public List<String> getMode() {

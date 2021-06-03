@@ -17,8 +17,8 @@ public class LangUtil {
     public static String i18n(String key) {
         Locale locale = Locale.getDefault();
         String lang = locale.getLanguage() + "_" + locale.getCountry();
-        if (!ZnZip.INSTANCE.config.language.getCurrent().equals("System")) {
-            lang = ZnZip.INSTANCE.config.language.getCurrent();
+        if (!ZnZip.INSTANCE.config.language.getValue().equals("System")) {
+            lang = ZnZip.INSTANCE.config.language.getValue();
         }
         try {
             URL url = LangUtil.class.getResource("/lang/" + lang + ".json");

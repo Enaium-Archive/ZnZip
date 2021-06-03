@@ -196,7 +196,7 @@ public class FileTablePanel extends JTable {
     @Override
     public TableCellRenderer getDefaultRenderer(Class<?> columnClass) {
         DefaultTableCellRenderer defaultRenderer = (DefaultTableCellRenderer) super.getDefaultRenderer(columnClass);
-        if (ZnZip.INSTANCE.config.listCenter.isEnable()) {
+        if (ZnZip.INSTANCE.config.listCenter.getValue()) {
             defaultRenderer.setHorizontalAlignment(SwingConstants.CENTER);
         } else {
             defaultRenderer.setHorizontalAlignment(SwingConstants.LEFT);

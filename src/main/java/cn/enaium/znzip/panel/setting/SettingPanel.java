@@ -27,10 +27,10 @@ public class SettingPanel extends JPanel {
                 if (o instanceof EnableSetting) {
                     JCheckBox jCheckBox = new JCheckBox(o.getName());
 
-                    jCheckBox.setSelected(((EnableSetting) o).isEnable());
+                    jCheckBox.setSelected(((EnableSetting) o).getValue());
 
                     jCheckBox.addActionListener(e -> {
-                        ((EnableSetting) o).setEnable(jCheckBox.isSelected());
+                        ((EnableSetting) o).setValue(jCheckBox.isSelected());
                     });
 
                     jPanel.add(jCheckBox);
@@ -39,9 +39,9 @@ public class SettingPanel extends JPanel {
                     JPanel checkPanel = new JPanel(new GridLayout(1, 2));
                     JComboBox<String> jComboBox = new JComboBox<>();
                     ((ModeSetting) o).getMode().forEach(jComboBox::addItem);
-                    jComboBox.setSelectedItem(((ModeSetting) o).getCurrent());
+                    jComboBox.setSelectedItem(((ModeSetting) o).getValue());
                     jComboBox.addActionListener(e -> {
-                        ((ModeSetting) o).setCurrent((String) jComboBox.getSelectedItem());
+                        ((ModeSetting) o).setValue((String) jComboBox.getSelectedItem());
                     });
 
                     checkPanel.add(new JLabel(o.getName()));
