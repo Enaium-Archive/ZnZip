@@ -43,7 +43,7 @@ public class SaveFilePanel extends JMenuItem {
                 MessageUtil.error(ioException);
             }
 
-            JOptionPane.showMessageDialog(ZnZip.INSTANCE.jFrame, "Save success");
+            JOptionPane.showMessageDialog(ZnZip.INSTANCE.jFrame, LangUtil.i18n("panel.message.saveSuccess"));
         });
     }
 }
