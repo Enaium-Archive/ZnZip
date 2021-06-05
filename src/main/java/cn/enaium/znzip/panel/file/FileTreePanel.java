@@ -82,7 +82,7 @@ public class FileTreePanel extends JTree {
                 lastPathComponent = (DefaultMutableTreeNode) getSelectionPath().getLastPathComponent();
             }
 
-            String folderName = JOptionPane.showInputDialog(null, LangUtil.i18n("panel.filePanel.fileTablePanel.folderName"), LangUtil.i18n("panel.filePanel.fileTablePanel.newFolder"));
+            String folderName = JOptionPane.showInputDialog(FileTreePanel.this, LangUtil.i18n("panel.filePanel.fileTreePanel.folderName"), LangUtil.i18n("panel.filePanel.fileTreePanel.newFolder"));
 
             ((DefaultTreeModel) getModel()).insertNodeInto(new DefaultMutableTreeNode(folderName), lastPathComponent, lastPathComponent.getChildCount());
         });

@@ -13,6 +13,11 @@ import java.nio.charset.StandardCharsets;
  * @author Enaium
  */
 public class ConfigUtil {
+
+    private ConfigUtil() {
+        throw new IllegalAccessError("Utility");
+    }
+
     public static <T> T read(Class<?> t) {
         try {
             Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();

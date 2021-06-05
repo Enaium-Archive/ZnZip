@@ -3,6 +3,7 @@
   "menu.file.open": "Open",
   "menu.file.setting": "Setting",
   "menu.file.save": "Save",
+  "menu.file.searchContent": "Search Content",
   "menu.about": "About",
   "panel.filePanel.fileTablePanel.name": "Name",
   "panel.filePanel.fileTablePanel.size": "Size",
@@ -10,5 +11,8 @@
   "panel.filePanel.fileTreePanel.folderName": "Folder name",
   "panel.filePanel.fileTablePanel.unzip": "Unzip",
   "panel.message.saveSuccess": "Save success!",
-  "panel.message.unzipSuccess": "Unzip success!"
+  "panel.message.unzipSuccess": "Unzip success!",
+  "panel.content.search": "Search",
+  "panel.content.search.view": "View",
+  "panel.content.content": "Content"
 }

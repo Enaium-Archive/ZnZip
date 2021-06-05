@@ -11,6 +11,11 @@ import java.io.File;
  * @author Enaium
  */
 public class JFileChooserUtil {
+
+    private JFileChooserUtil() {
+        throw new IllegalAccessError("Utility");
+    }
+
     public static File show(Type type) {
         return show(type, new FileFilter() {
             @Override

@@ -10,6 +10,11 @@ import java.util.stream.Collectors;
  * @author Enaium
  */
 public class PathUtil {
+
+    private PathUtil() {
+        throw new IllegalAccessError("Utility");
+    }
+
     public static List<String> getList() {
         Set<String> list = new HashSet<>();
         for (String s : ZnZip.INSTANCE.dirs) {
@@ -48,8 +53,6 @@ public class PathUtil {
 
     public static String getPath(Object[] path) {
         StringBuilder stringBuffer = new StringBuilder();
-
-
 
         for (int i = 1, objectsLength = path.length; i < objectsLength; i++) {
             Object o = path[i];

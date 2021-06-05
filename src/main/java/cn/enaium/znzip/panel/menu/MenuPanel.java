@@ -1,6 +1,7 @@
 package cn.enaium.znzip.panel.menu;
 
 import cn.enaium.znzip.ZnZip;
+import cn.enaium.znzip.dialog.SearchContentDialog;
 import cn.enaium.znzip.dialog.SettingDialog;
 import cn.enaium.znzip.panel.AboutPanel;
 import cn.enaium.znzip.util.LangUtil;
@@ -24,6 +25,11 @@ public class MenuPanel extends JMenuBar {
 
         fileMenu.add(new OpenFilePanel());
         fileMenu.add(saveFilePanel);
+        JMenuItem searchContent = new JMenuItem(LangUtil.i18n("menu.file.searchContent"));
+        searchContent.addActionListener(e -> {
+            new SearchContentDialog();
+        });
+        fileMenu.add(searchContent);
         fileMenu.addSeparator();
         fileMenu.add(setting);
 

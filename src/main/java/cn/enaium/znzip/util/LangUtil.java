@@ -14,6 +14,11 @@ import java.util.Locale;
  * @author Enaium
  */
 public class LangUtil {
+
+    private LangUtil() {
+        throw new IllegalAccessError("Utility");
+    }
+
     public static String i18n(String key) {
         Locale locale = Locale.getDefault();
         String lang = locale.getLanguage() + "_" + locale.getCountry();
